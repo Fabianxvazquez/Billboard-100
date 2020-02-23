@@ -11,5 +11,6 @@ require 'faker'
 Artist.create(name: 'Arcade Fire')
 Artist.create(name: 'Battles')
 Artist.create(name: 'David Bowie')
+Song.create(name: 'roads' duration: 300)
 
 Billboard.create(name: 'top 100')
