@@ -3,11 +3,11 @@
 one:
   name: MyString
   duration: 1
-  billboard: one
   artist: one
+  billboard: one
 
 two:
   name: MyString
   duration: 1
-  billboard: two
   artist: two
+  billboard: two

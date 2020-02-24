@@ -1,27 +1,6 @@
+<h1>Billboard 100</h1>
+<p>Find me in app/views/billboards/index.html.erb</p>
 <p id="notice"><%= notice %></p>
 
 <h1>Billboards</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @billboards.each do |billboard| %>
-      <tr>
-        <td><%= billboard.name %></td>
-        <td><%= link_to 'Show', billboard %></td>
-        <td><%= link_to 'Edit', edit_billboard_path(billboard) %></td>
-        <td><%= link_to 'Destroy', billboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Billboard', new_billboard_path %>

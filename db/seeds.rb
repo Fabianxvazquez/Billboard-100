@@ -8,9 +8,40 @@
 
 require 'faker'
 
-Artist.create(name: 'Arcade Fire')
-Artist.create(name: 'Battles')
-Artist.create(name: 'David Bowie')
-Song.create(name: 'roads' duration: 300)
+10.times do
+  name = Faker::FunnyName.unique.name
+  duration = rand(1..200)
+  Song.create(name: name, duration: duration, artist_id: 7, billboard_id: 1)
+end
 
-Billboard.create(name: 'top 100')
+10.times do
+  name = Faker::FunnyName.unique.name
+  duration = rand(1..200)
+  Song.create(name: name, duration: duration, artist_id: 6, billboard_id: 1)
+end
+
+10.times do
+  name = Faker::FunnyName.unique.name
+  duration = rand(1..200)
+  Song.create(name: name, duration: duration, artist_id: 8, billboard_id: 1)
+end
+
+10.times do
+  name = Faker::FunnyName.unique.name
+  duration = rand(1..200)
+  Song.create(name: name, duration: duration, artist_id: 9, billboard_id: 1)
+end
+
+10.times do
+  name = Faker::FunnyName.unique.name
+  duration = rand(1..200)
+  Song.create(name: name, duration: duration, artist_id: 10, billboard_id: 1)
+end
+
+10.times do
+  name = Faker::FunnyName.unique.name
+  duration = rand(1..200)
+  Song.create(name: name, duration: duration, artist_id: 11, billboard_id: 1)
+end
+
+

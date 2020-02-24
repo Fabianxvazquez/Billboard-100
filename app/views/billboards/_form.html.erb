@@ -1,22 +1,5 @@
-<%= form_with(model: billboard, local: true) do |form| %>
-  <% if billboard.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(billboard.errors.count, "error") %> prohibited this billboard from being saved:</h2>
-
-      <ul>
-        <% billboard.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= form_for @artist do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus:true %>
+  <%= f.submit %>
 <% end %>
