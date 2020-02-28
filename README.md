@@ -24,3 +24,4 @@ This is an example of how to initiate a Billboard with artists and songs
 * Fill out all your CRUD actions
 * Fill out index, show, new, html.pages
 * Add finishing touches nav bar, color, and links 
+* Marvel at the glorious app you have created :grinning:
