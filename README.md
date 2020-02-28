@@ -15,6 +15,8 @@ This is an example of how to initiate a Billboard with artists and songs
 * "**BUNDLE INSTALL**"
 
 # Getting started
-* create your app in rails using desired server (postgres, etc)
-* Create your models for a Billboard, artists, and songs
-
+* Create your app in rails using desired database (postgres, etc)
+* Create your models for Billboard, artists, and songs in rails
+* Specify in app/models/artists 
+"has_many :songs 
+has many :billboards, through: :songs"
